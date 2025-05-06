@@ -1,0 +1,6 @@
+# .gitignore
+# Dukicks_BE .NET
+/Dukicks_BE/bin/
+/Dukicks_BE/obj/
+/Dukicks_BE/*.user
+/Dukicks_BE/*.suo
