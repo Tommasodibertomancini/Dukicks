@@ -98,7 +98,7 @@ const RegisterPage = () => {
   };
 
   return (
-    <Container className='my-5'>
+    <Container className='my-4'>
       <Row className='justify-content-center'>
         <Col md={10} >
           <div className='text-center mb-5'>
