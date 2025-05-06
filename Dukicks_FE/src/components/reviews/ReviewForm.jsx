@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Form, Button, Alert } from 'react-bootstrap';
 import { FaStar, FaRegStar } from 'react-icons/fa';
-import reviewService from '../../services/reviewService';
+import reviewService from '../../services/ReviewService';
 
 const ReviewForm = ({ productId, orderId, onReviewSubmitted, onCancel }) => {
   const [rating, setRating] = useState(0);
