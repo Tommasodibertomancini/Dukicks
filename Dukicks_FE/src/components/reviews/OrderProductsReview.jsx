@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Card, Button, Alert, Modal, Form, Row, Col } from 'react-bootstrap';
 import { FaStar, FaRegStar, FaCheckCircle } from 'react-icons/fa';
-import reviewService from '../../services/reviewService';
+import reviewService from '../../services/ReviewService';
 
 /**
  * Componente per recensire prodotti acquistati nella pagina Thank You
