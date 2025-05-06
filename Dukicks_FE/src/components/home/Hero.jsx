@@ -86,6 +86,11 @@ const Hero = () => {
                   <Row className='align-items-center carousel-content'>
                     <Col md={8} className='text-start'>
                       <h1 className='product-title-large'>{product.name}</h1>
+                      <p className='product-description-large'>
+                        {idx === 0
+                          ? 'Eleganza e performance si fondono in un design unico. La nostra collezione esclusiva ridefinisce il concetto di stile urbano, combinando materiali premium e dettagli sofisticati per chi non vuole passare inosservato.'
+                          : "L'innovazione incontra il comfort in un capolavoro di design. Queste sneakers rappresentano l'equilibrio perfetto tra estetica contemporanea e tecnologia all'avanguardia. Un'esperienza sensoriale che trasforma ogni passo in una dichiarazione di stile."}
+                      </p>
                       <Button
                         as={Link}
                         to={`/products/${product.id}`}
