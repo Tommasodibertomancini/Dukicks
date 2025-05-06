@@ -68,7 +68,7 @@ const Hero = () => {
                   </Col>
                   <Col md={4} className='d-none d-md-block'>
                     <img
-                      src='../../public/assets/img/Dukicks.png'
+                      src='https://dukicks.vercel.app/assets/img/DuKicks.png'
                       alt='DuKicks Logo'
                       className='welcome-logo-image'
                     />
