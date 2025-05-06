@@ -1,0 +1,241 @@
+.hero-section {
+  margin-bottom: 3rem;
+}
+
+.large-image-carousel {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.large-image-carousel .carousel-indicators {
+  bottom: 20px;
+}
+
+.large-image-carousel .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 0 5px;
+  border: none;
+}
+
+.large-image-carousel .carousel-indicators button.active {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.large-image-carousel .carousel-control-prev,
+.large-image-carousel .carousel-control-next {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.large-image-carousel .carousel-control-prev {
+  left: 20px;
+}
+
+.large-image-carousel .carousel-control-next {
+  right: 20px;
+}
+
+.large-image-carousel .carousel-control-prev:hover,
+.large-image-carousel .carousel-control-next:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Stile della slide di benvenuto */
+.carousel-welcome-container {
+  position: relative;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  background-color: #f8f9fa;
+  overflow: hidden;
+}
+
+.welcome-title {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+.welcome-description {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 90%;
+}
+
+.welcome-button {
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.welcome-button:hover {
+  background-color: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-logo-image {
+  max-width: 100%;
+  max-height: 400px;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+}
+
+/* Stile delle slide dei prodotti */
+.carousel-product-large-container {
+  position: relative;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  background-color: #f8f9fa;
+  overflow: hidden;
+}
+
+.carousel-content {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.product-title-large {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  color: #000;
+}
+
+.action-button-large {
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  
+}
+
+.action-button-large:hover {
+  background-color: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-image-large-container {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.product-feature-image-large {
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.1));
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .carousel-welcome-container,
+  .carousel-product-large-container {
+    min-height: 450px;
+  }
+
+  .welcome-title,
+  .product-title-large {
+    font-size: 3rem;
+  }
+
+  .welcome-description {
+    font-size: 1.2rem;
+  }
+
+  .welcome-logo-image,
+  .product-feature-image-large {
+    max-height: 350px;
+  }
+
+  .product-image-large-container {
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-welcome-container,
+  .carousel-product-large-container {
+    min-height: 600px;
+    padding: 2rem 1rem;
+  }
+
+  .carousel-content {
+    flex-direction: column-reverse;
+    text-align: center;
+    min-height: 580px;
+  }
+
+  .welcome-title,
+  .product-title-large {
+    font-size: 2.5rem;
+    margin: 1.5rem auto;
+    text-align: center;
+  }
+
+  .welcome-description {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .product-image-large-container {
+    height: 320px;
+    margin-bottom: 1rem;
+  }
+
+  .product-feature-image-large {
+    max-height: 320px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-welcome-container,
+  .carousel-product-large-container {
+    min-height: 500px;
+  }
+
+  .welcome-title,
+  .product-title-large {
+    font-size: 2rem;
+  }
+
+  .welcome-description {
+    font-size: 1rem;
+  }
+
+  .product-image-large-container {
+    height: 280px;
+  }
+
+  .product-feature-image-large {
+    max-height: 280px;
+  }
+
+  .welcome-button,
+  .action-button-large {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,250 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-left {
+  animation: fadeInLeft 0.5s ease forwards;
+}
+
+/* Animazione per il carrello quando si aggiunge un prodotto */
+@keyframes cartBounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.cart-bounce {
+  animation: cartBounce 0.8s ease;
+}
+
+/* Animazione per il pulsante wishlist */
+@keyframes heartBeat {
+  0% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.3);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.3);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+
+.heart-beat {
+  animation: heartBeat 1.3s ease;
+}
+
+/* Animazione per l'hover delle card prodotto */
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Stagger animation per le liste */
+.stagger-item {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.stagger-item:nth-child(1) {
+  animation: fadeInUp 0.5s ease 0.1s forwards;
+}
+.stagger-item:nth-child(2) {
+  animation: fadeInUp 0.5s ease 0.2s forwards;
+}
+.stagger-item:nth-child(3) {
+  animation: fadeInUp 0.5s ease 0.3s forwards;
+}
+.stagger-item:nth-child(4) {
+  animation: fadeInUp 0.5s ease 0.4s forwards;
+}
+.stagger-item:nth-child(5) {
+  animation: fadeInUp 0.5s ease 0.5s forwards;
+}
+.stagger-item:nth-child(6) {
+  animation: fadeInUp 0.5s ease 0.6s forwards;
+}
+.stagger-item:nth-child(7) {
+  animation: fadeInUp 0.5s ease 0.7s forwards;
+}
+.stagger-item:nth-child(8) {
+  animation: fadeInUp 0.5s ease 0.8s forwards;
+}
+.stagger-item:nth-child(9) {
+  animation: fadeInUp 0.5s ease 0.9s forwards;
+}
+.stagger-item:nth-child(10) {
+  animation: fadeInUp 0.5s ease 1s forwards;
+}
+.stagger-item:nth-child(n + 11) {
+  animation: fadeInUp 0.5s ease 1.1s forwards;
+}
+
+/* Animazione per i bottoni */
+.btn {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Animazione per la notifica toast */
+.Toastify__toast {
+  animation: fadeInUp 0.3s ease forwards;
+}
+
+/* Animazione per il cambio tema */
+.theme-toggle {
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: rotate(30deg);
+}
+
+/* Animazione per i form */
+.form-control:focus,
+.form-select:focus {
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Per pagine di redirect come Thank You page */
+.page-transition {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+/* Spinner */
+
+.newtons-cradle {
+  --uib-size: 50px;
+  --uib-speed: 1.2s;
+  --uib-color: #474554;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--uib-size);
+  height: var(--uib-size);
+}
+
+.newtons-cradle__dot {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 25%;
+  transform-origin: center top;
+}
+
+.newtons-cradle__dot::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 25%;
+  border-radius: 50%;
+  background-color: var(--uib-color);
+}
+
+.newtons-cradle__dot:first-child {
+  animation: swing var(--uib-speed) linear infinite;
+}
+
+.newtons-cradle__dot:last-child {
+  animation: swing2 var(--uib-speed) linear infinite;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+    animation-timing-function: ease-out;
+  }
+
+  25% {
+    transform: rotate(70deg);
+    animation-timing-function: ease-in;
+  }
+
+  50% {
+    transform: rotate(0deg);
+    animation-timing-function: linear;
+  }
+}
+
+@keyframes swing2 {
+  0% {
+    transform: rotate(0deg);
+    animation-timing-function: linear;
+  }
+
+  50% {
+    transform: rotate(0deg);
+    animation-timing-function: ease-out;
+  }
+
+  75% {
+    transform: rotate(-70deg);
+    animation-timing-function: ease-in;
+  }
+}

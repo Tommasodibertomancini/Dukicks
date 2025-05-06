@@ -1,0 +1,504 @@
+/* src/styles/theme.css */
+:root {
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --card-bg: #ffffff;
+  --border-color: #dee2e6;
+  --input-bg: #ffffff;
+  --primary-color: #3f51b5;
+  --primary-hover: #303f9f;
+  --secondary-color: #f8f9fa;
+  --secondary-hover: #e9ecef;
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+  --info-color: #17a2b8;
+  --shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  --navbar-bg: #343a40;
+  --navbar-text: #ffffff;
+  --footer-bg: #343a40;
+  --footer-text: #ffffff;
+  --muted-text: #6c757d;
+  --transition-speed: 0.3s;
+
+  /* Variabili per wishlist */
+  --wishlist-header-bg: #ffffff;
+  --wishlist-header-text: #333333;
+  --wishlist-card-bg: #ffffff;
+  --wishlist-footer-bg: #ffffff;
+  --wishlist-empty-icon: #6c757d;
+  --wishlist-item-border: #dee2e6;
+  --wishlist-item-hover: #f8f9fa;
+  --wishlist-remove-btn-bg: #dc3545;
+  --wishlist-remove-btn-hover: #c82333;
+
+  /* Variabili specifiche per il carrello */
+  --cart-header-bg: #ffffff;
+  --cart-header-text: #333333;
+  --cart-body-bg: #ffffff;
+  --cart-footer-bg: #ffffff;
+  --cart-item-border: #dee2e6;
+  --cart-item-hover: #f8f9fa;
+
+  /* Variabili per il sommario del carrello */
+  --cart-summary-bg: #ffffff;
+  --cart-summary-title: #333333;
+  --cart-summary-border: #dee2e6;
+  --cart-summary-item-bg: #ffffff;
+  --cart-summary-text: #333333;
+  --cart-summary-total-text: #333333;
+  --cart-free-shipping: #28a745;
+
+  /* Variabili per il carrello vuoto */
+  --empty-cart-bg: #ffffff;
+  --empty-cart-title: #333333;
+  --empty-cart-text: #6c757d;
+  --empty-cart-icon: #6c757d;
+
+  /* Variabili per Hero */
+  --hero-welcome-bg: #f8f9fa;
+  --hero-welcome-text: #333333;
+  --hero-product-bg: #f1f1f1;
+  --hero-product-text: #333333;
+  --hero-button-bg: #343a40;
+  --hero-button-text: #ffffff;
+  --hero-button-hover-bg: #212529;
+
+  /* Variabili per Category Showcase */
+  --category-card-bg: #ffffff;
+  --category-card-border: #dee2e6;
+  --category-card-text: #333333;
+  --category-card-hover-bg: #f8f9fa;
+  --category-icon-color: #6c757d;
+
+  /* Variabili per Featured Products */
+  --featured-title-text: #333333;
+  --product-card-bg: #ffffff;
+  --product-card-border: #dee2e6;
+  --product-card-text: #333333;
+  --product-card-subtitle: #6c757d;
+  --product-card-hover-bg: #f8f9fa;
+  --product-card-hover-shadow: rgba(0, 0, 0, 0.15);
+
+  /* Variabili per Newsletter */
+  --newsletter-bg: #f8f9fa;
+  --newsletter-text: #333333;
+  --newsletter-muted-text: #6c757d;
+  --newsletter-input-bg: #ffffff;
+  --newsletter-input-border: #ced4da;
+  --newsletter-success-bg: #d4edda;
+  --newsletter-success-text: #155724;
+
+  /* Variabili per la pagina dei prodotti */
+  --products-page-title: #333333;
+  --products-count-text: #6c757d;
+
+  /* Variabili per i filtri */
+  --filters-bg: #ffffff;
+  --filters-title: #333333;
+  --filters-border: #dee2e6;
+  --accordion-header-bg: #f8f9fa;
+  --accordion-header-active-bg: #e9ecef;
+  --accordion-body-bg: #ffffff;
+  --filter-control-bg: #ffffff;
+  --filter-control-border: #ced4da;
+  --filter-control-text: #495057;
+  --filter-checkbox-bg: #ffffff;
+
+  /* Variabili per la ricerca e ordinamento */
+  --search-input-bg: #ffffff;
+  --search-input-border: #ced4da;
+  --search-input-text: #495057;
+  --sort-select-bg: #ffffff;
+  --sort-select-border: #ced4da;
+  --sort-select-text: #495057;
+
+  /* Variabili per ProductCard*/
+  --card-bg: #27272a;
+  --card-title: #d9d9d9;
+  --card-brand: #9ca3af;
+  --card-action-bg: linear-gradient(0deg, #6d28d9 50%, #d9d9d9 125%);
+  --card-price-color: #d9d9d9;
+  --card-discount-color: #dc3545;
+  --card-border-radius: 1rem;
+
+  /* Variabili per messaggi di avviso */
+  --alert-info-bg: #cff4fc;
+  --alert-info-text: #055160;
+  --alert-danger-bg: #f8d7da;
+  --alert-danger-text: #842029;
+
+  /* Variabili per la paginazione */
+  --pagination-bg: #ffffff;
+  --pagination-border: #dee2e6;
+  --pagination-text: #333333;
+  --pagination-hover-bg: #e9ecef;
+  --pagination-active-bg: #3f51b5;
+  --pagination-active-text: #ffffff;
+  --pagination-disabled-text: #6c757d;
+
+  /* Variabili per il profilo utente */
+  --profile-sidebar-bg: #ffffff;
+  --profile-content-bg: #ffffff;
+  --profile-text-color: #333333;
+  --profile-avatar-bg: #3f51b5;
+  --profile-avatar-text: #ffffff;
+  --profile-nav-btn-bg: #f8f9fa;
+  --profile-nav-btn-text: #333333;
+  --profile-nav-btn-active-bg: #3f51b5;
+  --profile-nav-btn-active-text: #ffffff;
+  --profile-nav-btn-border: #dee2e6;
+  --profile-tab-active-text: #3f51b5;
+  --profile-tab-text: #333333;
+  --profile-tab-border: #dee2e6;
+
+  /* Variabili per la pagina ordini */
+  --orders-page-title: #333333;
+  --orders-page-text: #6c757d;
+  --orders-card-bg: #ffffff;
+  --orders-card-border: #dee2e6;
+  --orders-table-header-bg: #f8f9fa;
+  --orders-table-header-text: #333333;
+  --orders-table-row-hover: #f8f9fa;
+  --orders-empty-icon: #6c757d;
+
+  /* Variabili per tutte le tabelle */
+  --table-header-bg: #f8f9fa;
+  --table-header-text: #333333;
+  --table-cell-text: #333333;
+  --table-border-color: #dee2e6;
+  --table-hover-bg: #f1f3f5;
+
+  /* Variabili per la Thank You page */
+  --thankyou-page-title: #333333;
+  --thankyou-page-text: #6c757d;
+  --thankyou-card-bg: #ffffff;
+  --thankyou-card-border: #dee2e6;
+  --thankyou-card-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  --thankyou-header-bg: #f8f9fa;
+  --thankyou-header-text: #333333;
+  --thankyou-divider: #dee2e6;
+  --thankyou-success-icon: #28a745;
+  --thankyou-product-text: #333333;
+  --thankyou-price-text: #333333;
+
+  /* Variabili per la pagina 404 */
+  --not-found-bg: #ffffff;
+  --not-found-text: #333333;
+  --not-found-title: #333333;
+  --not-found-description: #6c757d;
+  --not-found-icon: #ffc107;
+
+  /* Variabili per il dropdown menu*/
+  --dropdown-menu-bg: #ffffff;
+  --dropdown-menu-text: #333333;
+  --dropdown-menu-hover: #f8f9fa;
+  --dropdown-menu-border: #dee2e6;
+  --dropdown-divider: #e9ecef;
+}
+
+.dark-theme {
+  --background-color: #121212;
+  --text-color: #e0e0e0;
+  --card-bg: #1e1e1e;
+  --border-color: #444444;
+  --input-bg: #2d2d2d;
+  --primary-color: #5c6bc0;
+  --primary-hover: #3f51b5;
+  --secondary-color: #2d2d2d;
+  --secondary-hover: #3a3a3a;
+  --success-color: #2e7d32;
+  --danger-color: #c62828;
+  --warning-color: #f9a825;
+  --info-color: #0277bd;
+  --shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  --navbar-bg: #1e1e1e;
+  --navbar-text: #e0e0e0;
+  --footer-bg: #1e1e1e;
+  --footer-text: #e0e0e0;
+  --muted-text: #9e9e9e;
+
+  /* Variabili per wishlist */
+  --wishlist-header-bg: #1e1e1e;
+  --wishlist-header-text: #e0e0e0;
+  --wishlist-card-bg: #1e1e1e;
+  --wishlist-footer-bg: #1e1e1e;
+  --wishlist-empty-icon: #9e9e9e;
+  --wishlist-item-border: #444444;
+  --wishlist-item-hover: #2a2a2a;
+  --wishlist-remove-btn-bg: #c62828;
+  --wishlist-remove-btn-hover: #b71c1c;
+
+  /* Variabili specifiche per il carrello */
+  --cart-header-bg: #1e1e1e;
+  --cart-header-text: #e0e0e0;
+  --cart-body-bg: #1e1e1e;
+  --cart-footer-bg: #1e1e1e;
+  --cart-item-border: #444444;
+  --cart-item-hover: #2a2a2a;
+
+  /* Variabili per il sommario del carrello */
+  --cart-summary-bg: #1e1e1e;
+  --cart-summary-title: #e0e0e0;
+  --cart-summary-border: #444444;
+  --cart-summary-item-bg: #1e1e1e;
+  --cart-summary-text: #e0e0e0;
+  --cart-summary-total-text: #e0e0e0;
+  --cart-free-shipping: #2e7d32;
+
+  /* Variabili per il carrello vuoto */
+  --empty-cart-bg: #1e1e1e;
+  --empty-cart-title: #e0e0e0;
+  --empty-cart-text: #9e9e9e;
+  --empty-cart-icon: #9e9e9e;
+
+  /* Variabili per Hero */
+  --hero-welcome-bg: #1e1e1e;
+  --hero-welcome-text: #e0e0e0;
+  --hero-product-bg: #2d2d2d;
+  --hero-product-text: #e0e0e0;
+  --hero-button-bg: #5c6bc0;
+  --hero-button-text: #ffffff;
+  --hero-button-hover-bg: #3f51b5;
+
+  /* Variabili per Category Showcase */
+  --category-card-bg: #1e1e1e;
+  --category-card-border: #444444;
+  --category-card-text: #e0e0e0;
+  --category-card-hover-bg: #2a2a2a;
+  --category-icon-color: #9e9e9e;
+
+  /* Variabili per Featured Products */
+  --featured-title-text: #e0e0e0;
+  --product-card-bg: #1e1e1e;
+  --product-card-border: #444444;
+  --product-card-text: #e0e0e0;
+  --product-card-subtitle: #9e9e9e;
+  --product-card-hover-bg: #2a2a2a;
+  --product-card-hover-shadow: rgba(0, 0, 0, 0.5);
+
+  /* Variabili per Newsletter */
+  --newsletter-bg: #2d2d2d;
+  --newsletter-text: #e0e0e0;
+  --newsletter-muted-text: #9e9e9e;
+  --newsletter-input-bg: #383838;
+  --newsletter-input-border: #444444;
+  --newsletter-success-bg: #2e7d32;
+  --newsletter-success-text: #e0e0e0;
+
+  /* Variabili per la pagina dei prodotti */
+  --products-page-title: #e0e0e0;
+  --products-count-text: #9e9e9e;
+
+  /* Variabili per i filtri */
+  --filters-bg: #1e1e1e;
+  --filters-title: #e0e0e0;
+  --filters-border: #444444;
+  --accordion-header-bg: #2d2d2d;
+  --accordion-header-active-bg: #383838;
+  --accordion-body-bg: #1e1e1e;
+  --filter-control-bg: #333333;
+  --filter-control-border: #444444;
+  --filter-control-text: #e0e0e0;
+  --filter-checkbox-bg: #333333;
+
+  /* Variabili per la ricerca e ordinamento */
+  --search-input-bg: #333333;
+  --search-input-border: #444444;
+  --search-input-text: #e0e0e0;
+  --sort-select-bg: #333333;
+  --sort-select-border: #444444;
+  --sort-select-text: #e0e0e0;
+
+  /* Variabili per ProductCard (integrando con quanto già definito) */
+  --card-bg: #1e1e1e;
+  --card-title: #e0e0e0;
+  --card-brand: #9e9e9e;
+  --card-action-bg: linear-gradient(0deg, #5c6bc0 50%, #e0e0e0 125%);
+  --card-price-color: #e0e0e0;
+  --card-discount-color: #f44336;
+  --card-border-radius: 1rem;
+
+  /* Variabili per messaggi di avviso */
+  --alert-info-bg: #0c5460;
+  --alert-info-text: #d1ecf1;
+  --alert-danger-bg: #721c24;
+  --alert-danger-text: #f8d7da;
+
+  /* Variabili per la paginazione */
+  --pagination-bg: #1e1e1e;
+  --pagination-border: #444444;
+  --pagination-text: #e0e0e0;
+  --pagination-hover-bg: #2a2a2a;
+  --pagination-active-bg: #5c6bc0;
+  --pagination-active-text: #ffffff;
+  --pagination-disabled-text: #9e9e9e;
+
+  /* Variabili per il profilo utente */
+  --profile-sidebar-bg: #1e1e1e;
+  --profile-content-bg: #1e1e1e;
+  --profile-text-color: #e0e0e0;
+  --profile-avatar-bg: #5c6bc0;
+  --profile-avatar-text: #ffffff;
+  --profile-nav-btn-bg: #2d2d2d;
+  --profile-nav-btn-text: #e0e0e0;
+  --profile-nav-btn-active-bg: #5c6bc0;
+  --profile-nav-btn-active-text: #ffffff;
+  --profile-nav-btn-border: #444444;
+  --profile-tab-active-text: #5c6bc0;
+  --profile-tab-text: #e0e0e0;
+  --profile-tab-border: #444444;
+
+  /* Variabili per la pagina ordini */
+  --orders-page-title: #e0e0e0;
+  --orders-page-text: #9e9e9e;
+  --orders-card-bg: #1e1e1e;
+  --orders-card-border: #444444;
+  --orders-table-header-bg: #2d2d2d;
+  --orders-table-header-text: #e0e0e0;
+  --orders-table-row-hover: #2a2a2a;
+  --orders-empty-icon: #9e9e9e; /* Variabili per la Thank You page */
+  --thankyou-page-title: #e0e0e0;
+  --thankyou-page-text: #9e9e9e;
+  --thankyou-card-bg: #1e1e1e;
+  --thankyou-card-border: #444444;
+  --thankyou-card-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  --thankyou-header-bg: #2d2d2d;
+  --thankyou-header-text: #e0e0e0;
+  --thankyou-divider: #444444;
+  --thankyou-success-icon: #2e7d32;
+  --thankyou-product-text: #e0e0e0;
+  --thankyou-price-text: #e0e0e0;
+
+  /* Variabili per tutte le tabelle */
+  --table-header-bg: #2d2d2d;
+  --table-header-text: #e0e0e0;
+  --table-cell-text: #e0e0e0;
+  --table-border-color: #444444;
+  --table-hover-bg: #383838;
+
+  /* Variabili per la pagina 404 */
+  --not-found-bg: #1e1e1e;
+  --not-found-text: #e0e0e0;
+  --not-found-title: #e0e0e0;
+  --not-found-description: #9e9e9e;
+  --not-found-icon: #ffc107;
+
+  /* Variabili per il dropdown menu*/
+  --dropdown-menu-bg: #1e1e1e;
+  --dropdown-menu-text: #e0e0e0;
+  --dropdown-menu-hover: #2a2a2a;
+  --dropdown-menu-border: #444444;
+  --dropdown-divider: #383838;
+}
+
+/* Applicazione dei colori a elementi generali */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color var(--transition-speed),
+    color var(--transition-speed);
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+  transition: background-color var(--transition-speed),
+    border-color var(--transition-speed);
+}
+
+.form-control,
+.form-select {
+  background-color: var(--input-bg);
+  border-color: var(--border-color);
+  color: var(--text-color);
+  transition: background-color var(--transition-speed),
+    color var(--transition-speed);
+}
+
+.text-muted {
+  color: var(--muted-text) !important;
+}
+
+.navbar-dark {
+  background-color: var(--navbar-bg) !important;
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .nav-link {
+  color: var(--navbar-text);
+}
+
+.bg-dark {
+  background-color: var(--footer-bg) !important;
+}
+
+.bg-light {
+  background-color: var(--secondary-color) !important;
+  color: var(--text-color);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/* Product cards */
+.product-card {
+  background-color: var(--card-bg);
+  transition: transform var(--transition-speed),
+    box-shadow var(--transition-speed), background-color var(--transition-speed);
+}
+
+/* Modal e dropdown */
+.modal-content {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+.dropdown-menu {
+  background-color: var(--dropdown-menu-bg) !important;
+  color: var(--dropdown-menu-text);
+  border-color: var(--dropdown-menu-border);
+}
+
+.dropdown-item {
+  color: var(--dropdown-menu-text);
+}
+
+.dropdown-item:hover {
+  background-color: var(--dropdown-menu-hover);
+}
+
+.dropdown-divider {
+  border-color: var(--dropdown-divider);
+}
+
+/* Bordi e separatori */
+.border,
+.border-top,
+.border-bottom,
+.border-start,
+.border-end {
+  border-color: var(--border-color) !important;
+}
+
+hr {
+  border-color: var(--border-color);
+}

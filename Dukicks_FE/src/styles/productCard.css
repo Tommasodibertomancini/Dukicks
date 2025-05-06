@@ -1,0 +1,221 @@
+.card {
+  --bg-card: var(--card-bg, #ffffff);
+  --primary: var(--primary-color, #6d28d9);
+  --primary-800: var(--primary-hover, #4c1d95);
+  --primary-shadow: rgba(46, 16, 101, 0.5);
+  --light: var(--text-color, #333333);
+  --zinc-800: var(--secondary-hover, #f8f9fa);
+  --bg-linear: var(
+    --card-action-bg,
+    linear-gradient(0deg, var(--primary) 50%, var(--light) 125%)
+  );
+  --danger: var(--danger-color, #dc3545);
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-card);
+  border-radius: 1rem;
+  border: 1px solid transparent;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-color: var(--primary-color, #3f51b5) !important;
+}
+
+.image_container {
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  height: 180px;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.image_container:hover .product-image {
+  transform: scale(1.05);
+}
+
+/* Wishlist button */
+.wishlist-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.2s ease;
+}
+
+.wishlist-button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.wishlist-icon {
+  color: var(--danger);
+  font-size: 20px;
+}
+
+.wishlist-icon-filled {
+  color: var(--danger);
+}
+
+/* badge sconto */
+.discount-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 10;
+  font-weight: bold;
+  padding: 0.35em 0.65em;
+}
+
+.title {
+  overflow: hidden;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--light);
+  text-transform: capitalize;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.brand-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  color: var(--muted-text, #9ca3af);
+  margin-top: -0.5rem;
+}
+
+.rating {
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+}
+
+.size {
+  font-size: 0.75rem;
+  color: var(--light);
+  margin-top: 0.5rem;
+}
+
+.list-size {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 0.25rem;
+  padding-left: 0;
+}
+
+.list-size .item-list {
+  list-style: none;
+}
+
+.list-size .item-list-button {
+  cursor: pointer;
+  padding: 0.35rem 0.5rem;
+  background-color: var(--zinc-800);
+  font-size: 0.75rem;
+  color: var(--light);
+  border: 2px solid var(--zinc-800);
+  border-radius: 0.25rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.item-list-button:hover {
+  border: 2px solid var(--light);
+}
+
+.item-list-button:focus {
+  background-color: var(--primary);
+  border: 2px solid var(--primary-shadow);
+  box-shadow: inset 0px 1px 4px var(--primary-shadow);
+}
+
+.action {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--light);
+}
+
+.original-price {
+  text-decoration: line-through;
+  font-size: 0.9rem;
+  color: var(--muted-text, #9ca3af);
+  font-weight: 400;
+}
+
+.discount-price {
+  color: var(--danger);
+}
+
+html:not(.dark-theme) .card {
+  background-color: #ffffff !important;
+  --light: #000000 !important;
+  --zinc-800: #f1f1f1 !important;
+  border: 1px solid #dee2e6 !important;
+}
+
+html:not(.dark-theme) .title {
+  color: #000000 !important;
+  font-weight: 700 !important;
+}
+
+html:not(.dark-theme) .brand-info {
+  color: #555555 !important; /* Brand info scuro */
+}
+
+html:not(.dark-theme) .price {
+  color: #000000 !important; /* Prezzo nero */
+}
+
+html:not(.dark-theme) .original-price {
+  color: #666666 !important;
+}
+
+html.dark-theme .card {
+  background-color: #27272a !important;
+  --light: #d9d9d9 !important;
+  --zinc-800: #18181b !important;
+}
+
+html:not(.dark-theme) .card:hover {
+  border-color: #3f51b5 !important;
+}

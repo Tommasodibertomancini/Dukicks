@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Dukicks_BE.props" />
+</Project>

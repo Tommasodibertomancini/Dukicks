@@ -1,0 +1,6 @@
+@Dukicks_BE_HostAddress = http://localhost:5146
+
+GET {{Dukicks_BE_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

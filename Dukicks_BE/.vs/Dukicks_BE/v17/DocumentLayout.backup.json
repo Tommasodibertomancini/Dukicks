@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\Dukicks\\Dukicks_BE\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{91458BC4-8430-4D30-BC3D-7816D617C7D4}|Dukicks_BE\\Dukicks_BE.csproj|c:\\users\\user\\desktop\\dukicks\\dukicks_be\\dukicks_be\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91458BC4-8430-4D30-BC3D-7816D617C7D4}|Dukicks_BE\\Dukicks_BE.csproj|solutionrelative:dukicks_be\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91458BC4-8430-4D30-BC3D-7816D617C7D4}|Dukicks_BE\\Dukicks_BE.csproj|c:\\users\\user\\desktop\\dukicks\\dukicks_be\\dukicks_be\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91458BC4-8430-4D30-BC3D-7816D617C7D4}|Dukicks_BE\\Dukicks_BE.csproj|solutionrelative:dukicks_be\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91458BC4-8430-4D30-BC3D-7816D617C7D4}|Dukicks_BE\\Dukicks_BE.csproj|c:\\users\\user\\desktop\\dukicks\\dukicks_be\\dukicks_be\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91458BC4-8430-4D30-BC3D-7816D617C7D4}|Dukicks_BE\\Dukicks_BE.csproj|solutionrelative:dukicks_be\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91458BC4-8430-4D30-BC3D-7816D617C7D4}|Dukicks_BE\\Dukicks_BE.csproj|c:\\users\\user\\desktop\\dukicks\\dukicks_be\\dukicks_be\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{91458BC4-8430-4D30-BC3D-7816D617C7D4}|Dukicks_BE\\Dukicks_BE.csproj|solutionrelative:dukicks_be\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PaymentController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Dukicks\\Dukicks_BE\\Dukicks_BE\\Controllers\\PaymentController.cs",
+              "RelativeDocumentMoniker": "Dukicks_BE\\Controllers\\PaymentController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Dukicks\\Dukicks_BE\\Dukicks_BE\\Controllers\\PaymentController.cs",
+              "RelativeToolTip": "Dukicks_BE\\Controllers\\PaymentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T10:21:27.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Dukicks\\Dukicks_BE\\Dukicks_BE\\appsettings.json",
+              "RelativeDocumentMoniker": "Dukicks_BE\\appsettings.json",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Dukicks\\Dukicks_BE\\Dukicks_BE\\appsettings.json",
+              "RelativeToolTip": "Dukicks_BE\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-06T10:37:33.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PaymentService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Dukicks\\Dukicks_BE\\Dukicks_BE\\Services\\PaymentService.cs",
+              "RelativeDocumentMoniker": "Dukicks_BE\\Services\\PaymentService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Dukicks\\Dukicks_BE\\Dukicks_BE\\Services\\PaymentService.cs",
+              "RelativeToolTip": "Dukicks_BE\\Services\\PaymentService.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAwAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T10:32:14.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Dukicks\\Dukicks_BE\\Dukicks_BE\\Program.cs",
+              "RelativeDocumentMoniker": "Dukicks_BE\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Dukicks\\Dukicks_BE\\Dukicks_BE\\Program.cs",
+              "RelativeToolTip": "Dukicks_BE\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T10:26:31.806Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
