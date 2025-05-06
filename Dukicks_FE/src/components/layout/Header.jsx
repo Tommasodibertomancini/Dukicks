@@ -48,7 +48,7 @@ const Header = () => {
         <Container fluid>
           <Navbar.Brand as={Link} to='/'>
             <img
-              src='../../public/assets/img/DuKicks.png'
+              src='https://dukicks.vercel.app/assets/img/DuKicks.png'
               alt='DuKicks Logo'
               width='50'
               height='50'
