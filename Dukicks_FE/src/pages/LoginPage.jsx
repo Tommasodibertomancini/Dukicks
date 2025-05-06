@@ -84,65 +84,134 @@ const LoginPage = () => {
   return (
     <Container className='my-5'>
       <Row className='justify-content-center'>
-        <Col md={6} lg={5}>
-          <Card>
-            <Card.Body className='p-4'>
-              <h2 className='text-center mb-4'>Accedi</h2>
+        <Col md={10}>
+          <div className='text-center mb-5'>
+            <h1 className='display-4 fw-bold'>
+              <span className='text-primary'>Bentornato</span> su Dukicks
+            </h1>
+            <p className='lead fw-normal fs-4 mb-0'>
+              Accedi al tuo account per continuare il tuo viaggio nel mondo
+              delle sneakers
+            </p>
+          </div>
 
-              {error && (
-                <Alert variant='danger' className='mb-4'>
-                  {error}
-                </Alert>
-              )}
+          <Row>
+            <Col lg={6} className='d-none d-lg-block'>
+              <div className='benefits-sidebar p-5 position-relative overflow-hidden'>
+                <div className='sneaker-bg-shape'></div>
 
-              <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                <Form.Group className='mb-3' controlId='email'>
-                  <Form.Label>Email</Form.Label>
-                  <Form.Control
-                    type='email'
-                    name='email'
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    placeholder='La tua email'
-                  />
-                  <Form.Control.Feedback type='invalid'>
-                    Inserisci un indirizzo email valido.
-                  </Form.Control.Feedback>
-                </Form.Group>
-
-                <Form.Group className='mb-4' controlId='password'>
-                  <Form.Label>Password</Form.Label>
-                  <Form.Control
-                    type='password'
-                    name='password'
-                    value={formData.password}
-                    onChange={handleChange}
-                    required
-                    placeholder='La tua password'
-                  />
-                  <Form.Control.Feedback type='invalid'>
-                    Inserisci la tua password.
-                  </Form.Control.Feedback>
-                </Form.Group>
-
-                <div className='d-grid'>
-                  <Button variant='primary' type='submit' disabled={isLoading}>
-                    {isLoading ? 'Accesso in corso...' : 'Accedi'}
-                  </Button>
+                <div className='benefit-item mb-3'>
+                  <div className='icon-container mb-3'>
+                    <i className='bi bi-box-seam fs-1'></i>
+                  </div>
+                  <h4 className='fw-bold'>Accedi alle tue collezioni</h4>
+                  <p>
+                    Visualizza i tuoi ordini, le tue sneakers salvate e le
+                    raccolte personalizzate che hai creato nel tempo.
+                  </p>
                 </div>
-              </Form>
 
-              <div className='text-center mt-4'>
-                <p className='mb-0'>
-                  Non hai un account?{' '}
-                  <Link to='/register' className='link'>
-                    Registrati
-                  </Link>
-                </p>
+                <div className='benefit-item'>
+                  <div className='icon-container mb-3'>
+                    <i className='bi bi-person-circle fs-1'></i>
+                  </div>
+                  <h4 className='fw-bold'>Esplora contenuti esclusivi</h4>
+                  <p>
+                    Sblocca offerte riservate ai membri, anteprime di nuovi
+                    modelli e contenuti disponibili solo per gli utenti
+                    registrati.
+                  </p>
+                </div>
               </div>
-            </Card.Body>
-          </Card>
+            </Col>
+
+            <Col lg={6}>
+              <Card className='shadow-lg border-0'>
+                <Card.Body className='p-5'>
+                  <h2 className='text-center mb-4'>Accedi al tuo account</h2>
+
+                  {location.state?.message && (
+                    <Alert variant='success' className='mb-4'>
+                      {location.state.message}
+                    </Alert>
+                  )}
+
+                  {error && (
+                    <Alert variant='danger' className='mb-4'>
+                      {error}
+                    </Alert>
+                  )}
+
+                  <Form
+                    noValidate
+                    validated={validated}
+                    onSubmit={handleSubmit}
+                  >
+                    <Form.Group className='mb-4' controlId='email'>
+                      <Form.Label>Email</Form.Label>
+                      <Form.Control
+                        type='email'
+                        name='email'
+                        value={formData.email}
+                        onChange={handleChange}
+                        required
+                        placeholder='La tua email'
+                        className='py-2'
+                      />
+                      <Form.Control.Feedback type='invalid'>
+                        Inserisci un indirizzo email valido.
+                      </Form.Control.Feedback>
+                    </Form.Group>
+
+                    <Form.Group className='mb-4' controlId='password'>
+                      <Form.Label>Password</Form.Label>
+                      <Form.Control
+                        type='password'
+                        name='password'
+                        value={formData.password}
+                        onChange={handleChange}
+                        required
+                        placeholder='La tua password'
+                        className='py-2'
+                      />
+                      <Form.Control.Feedback type='invalid'>
+                        Inserisci la tua password.
+                      </Form.Control.Feedback>
+                      <div className='text-end mt-2'>
+                        <Link
+                          to='/forgot-password'
+                          className='text-primary small'
+                        >
+                          Password dimenticata?
+                        </Link>
+                      </div>
+                    </Form.Group>
+
+                    <div className='d-grid mt-4'>
+                      <Button
+                        variant='primary'
+                        type='submit'
+                        disabled={isLoading}
+                        size='lg'
+                        className='py-2'
+                      >
+                        {isLoading ? 'Accesso in corso...' : 'Accedi'}
+                      </Button>
+                    </div>
+                  </Form>
+
+                  <div className='text-center mt-4'>
+                    <p className='mb-0'>
+                      Non hai un account?{' '}
+                      <Link to='/register' className='link fw-bold text-primary'>
+                        Registrati
+                      </Link>
+                    </p>
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
         </Col>
       </Row>
     </Container>
