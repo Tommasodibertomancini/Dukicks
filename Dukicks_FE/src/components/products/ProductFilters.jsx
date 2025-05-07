@@ -117,7 +117,7 @@ const ProductFilters = () => {
     <div className='product-filters'>
       <h4>Filtri</h4>
 
-      <Accordion defaultActiveKey={['0', '1', '2', '3', '4', '5']} >
+      <Accordion defaultActiveKey={[]} >
         <Accordion.Item eventKey='0'>
           <Accordion.Header>Categorie</Accordion.Header>
           <Accordion.Body>

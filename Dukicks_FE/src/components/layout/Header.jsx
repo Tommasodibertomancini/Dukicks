@@ -60,105 +60,113 @@ const Header = () => {
           {/* Toggle per dispositivi mobili */}
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
 
-          <Navbar.Collapse id='basic-navbar-nav'>
-            {/* Menu di navigazione sinistra */}
-            <Nav className='me-auto'>
-              <Nav.Link as={Link} to='/'>
-                Home
-              </Nav.Link>
-              <Nav.Link as={Link} to='/products'>
-                Prodotti
-              </Nav.Link>
-              <Nav.Link as={Link} to={'/products?categoryId=4'}>              
-              Limited Edition 
-              </Nav.Link>
-              {isAuthenticated && isAdmin() && (
-                <Nav.Link as={Link} to='/admin/dashboard'>
-                  Admin
+          <Navbar.Collapse
+            id='basic-navbar-nav'
+            className='justify-content-center'
+          >
+            <div className='d-lg-flex w-100 justify-content-between align-items-center'>
+              {/* Menu di navigazione sinistra */}
+              <Nav className='mb-2 mb-lg-0 mx-auto mx-lg-0'>
+                <Nav.Link as={Link} to='/'>
+                  Home
                 </Nav.Link>
-              )}
-            </Nav>
-
-            {/* Searchbar al centro */}
-            <div className='search-container mx-auto'>
-              <Form onSubmit={handleSearch} className='search-form'>
-                <input
-                  type='text'
-                  placeholder='Cerca prodotti...'
-                  className='search-input'
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                />
-                <button type='submit' className='search-button'>
-                  <FaSearch />
-                </button>
-              </Form>
-            </div>
-
-            {/* Icone e menu utente a destra */}
-            <Nav className='align-items-center'>
-              <ThemeToggle className='me-3' />
-
-              <Nav.Link as={Link} to='/cart' className='position-relative me-2'>
-                <FaShoppingCart />
-                {cartItemsCount > 0 && (
-                  <Badge
-                    pill
-                    bg='danger'
-                    className='position-absolute top-0 start-100 translate-middle'
-                  >
-                    {cartItemsCount}
-                  </Badge>
+                <Nav.Link as={Link} to='/products'>
+                  Prodotti
+                </Nav.Link>
+                <Nav.Link as={Link} to={'/products?categoryId=4'}>
+                  Limited Edition
+                </Nav.Link>
+                {isAuthenticated && isAdmin() && (
+                  <Nav.Link as={Link} to='/admin/dashboard'>
+                    Admin
+                  </Nav.Link>
                 )}
-              </Nav.Link>
+              </Nav>
 
-              <Nav.Link as={Link} to='/wishlist' className='me-2'>
-                <FaHeart />
-              </Nav.Link>
+              {/* Searchbar al centro */}
+              <div className='search-container mx-auto'>
+                <Form onSubmit={handleSearch} className='search-form'>
+                  <input
+                    type='text'
+                    placeholder='Cerca prodotti...'
+                    className='search-input'
+                    value={searchTerm}
+                    onChange={(e) => setSearchTerm(e.target.value)}
+                  />
+                  <button type='submit' className='search-button'>
+                    <FaSearch />
+                  </button>
+                </Form>
+              </div>
 
-              {isAuthenticated ? (
-                <NavDropdown
-                  title={
-                    <span>
-                      <FaUser className='me-1' />
-                    </span>
-                  }
-                  id='user-dropdown'
-                  align='end'
-                  className='user-dropdown'
+              {/* Icone e menu utente a destra */}
+              <Nav className='align-items-center mx-auto mx-lg-0'>
+                <ThemeToggle className='me-3' />
+                <Nav.Link
+                  as={Link}
+                  to='/cart'
+                  className='position-relative me-2'
                 >
-                  <NavDropdown.Item as={Link} to='/profile'>
-                    <FaUser className='me-2' />
-                    Il mio profilo
-                  </NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to='/orders'>
-                    <FaClipboardList className='me-2' />I miei ordini
-                  </NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to='/wishlist'>
-                    <FaHeart className='me-2' />
-                    Wishlist
-                  </NavDropdown.Item>
-                  {isAdmin() && (
-                    <NavDropdown.Item as={Link} to='/admin/dashboard'>
-                      <FaUserCog className='me-2' />
-                      Dashboard Admin
-                    </NavDropdown.Item>
+                  <FaShoppingCart />
+                  {cartItemsCount > 0 && (
+                    <Badge
+                      pill
+                      bg='danger'
+                      className='position-absolute top-0 start-100 translate-middle'
+                    >
+                      {cartItemsCount}
+                    </Badge>
                   )}
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item as='div'>
-                    <LogoutButton
-                      variant='link'
-                      className='p-0 text-danger w-100 text-start'
-                      showIcon={true}
-                    />
-                  </NavDropdown.Item>
-                </NavDropdown>
-              ) : (
-                <Nav.Link as={Link} to='/login'>
-                  <FaUser className='me-1' /> 
                 </Nav.Link>
-              )}
-            </Nav>
+
+                <Nav.Link as={Link} to='/wishlist' className='me-2'>
+                  <FaHeart />
+                </Nav.Link>
+
+                {isAuthenticated ? (
+                  <NavDropdown
+                    title={
+                      <span>
+                        <FaUser className='me-1' />
+                      </span>
+                    }
+                    id='user-dropdown'
+                    align='end'
+                    className='user-dropdown'
+                  >
+                    <NavDropdown.Item as={Link} to='/profile'>
+                      <FaUser className='me-2' />
+                      Il mio profilo
+                    </NavDropdown.Item>
+                    <NavDropdown.Item as={Link} to='/orders'>
+                      <FaClipboardList className='me-2' />I miei ordini
+                    </NavDropdown.Item>
+                    <NavDropdown.Item as={Link} to='/wishlist'>
+                      <FaHeart className='me-2' />
+                      Wishlist
+                    </NavDropdown.Item>
+                    {isAdmin() && (
+                      <NavDropdown.Item as={Link} to='/admin/dashboard'>
+                        <FaUserCog className='me-2' />
+                        Dashboard Admin
+                      </NavDropdown.Item>
+                    )}
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item as='div'>
+                      <LogoutButton
+                        variant='link'
+                        className='p-0 text-danger w-100 text-start'
+                        showIcon={true}
+                      />
+                    </NavDropdown.Item>
+                  </NavDropdown>
+                ) : (
+                  <Nav.Link as={Link} to='/login'>
+                    <FaUser className='me-1' />
+                  </Nav.Link>
+                )}
+              </Nav>
+            </div>
           </Navbar.Collapse>
         </Container>
       </Navbar>
