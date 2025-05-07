@@ -73,7 +73,7 @@ const Header = () => {
                 <Nav.Link as={Link} to='/products'>
                   Prodotti
                 </Nav.Link>
-                <Nav.Link as={Link} to={'/products?categoryId=4'}>
+                <Nav.Link as={Link} to={'/products?categoryId=4'} className='limited-edition-link'>
                   Limited Edition
                 </Nav.Link>
                 {isAuthenticated && isAdmin() && (
