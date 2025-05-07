@@ -129,10 +129,10 @@ const WishlistPage = () => {
                         <Link to={`/products/${item.productId}`}>
                           <Card.Img
                             variant='top'
-                            src={
+                            src={                              
                               item.imageUrl.startsWith('http')
                                 ? item.imageUrl
-                                : `https://localhost:7025${item.imageUrl}`
+                                : `https://dukicks-backend-egbkdubnbxdmg4cw.italynorth-01.azurewebsites.net${item.imageUrl}`
                             }
                             alt={item.productName}
                             style={{ height: '200px', objectFit: 'contain' }}

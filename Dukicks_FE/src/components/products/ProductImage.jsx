@@ -23,7 +23,7 @@ const ProductImage = ({ imageUrl, alt, className }) => {
 
   const formattedImageUrl = imageUrl.startsWith('http')
     ? imageUrl
-    : `https://localhost:7025${imageUrl}`;
+    : `https://dukicks-backend-egbkdubnbxdmg4cw.italynorth-01.azurewebsites.net${imageUrl}`;
 
   return (
     <div

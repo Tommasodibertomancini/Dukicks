@@ -119,9 +119,6 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy("RequireUserRole", policy => policy.RequireRole("User"));
 });
 
-// Configurazione di Stripe
-StripeConfiguration.ApiKey = builder.Configuration["Stripe:SecretKey"];
-
 // Registrazione dei servizi
 builder.Services.AddScoped<UserManager<ApplicationUser>>();
 builder.Services.AddScoped<SignInManager<ApplicationUser>>();

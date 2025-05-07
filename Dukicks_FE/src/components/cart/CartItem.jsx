@@ -20,7 +20,7 @@ const CartItem = ({ item, onQuantityChange, onRemove }) => {
               src={
                 item.imageUrl.startsWith('http')
                   ? item.imageUrl
-                  : `https://localhost:7025${item.imageUrl}`
+                  : `https://dukicks-backend-egbkdubnbxdmg4cw.italynorth-01.azurewebsites.net${item.imageUrl}`
               }
               alt={item.productName}
               width={100}

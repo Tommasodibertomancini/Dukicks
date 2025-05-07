@@ -1,4 +1,4 @@
-const API_URL = 'https://localhost:7025/api';
+const API_URL = 'https://dukicks-backend-egbkdubnbxdmg4cw.italynorth-01.azurewebsites.net/api';
 
 const api = {
   async get(endpoint, params = {}) {

@@ -107,7 +107,7 @@ const ProductDetailPage = () => {
                 src={
                   product.imageUrl.startsWith('http')
                     ? product.imageUrl
-                    : `https://localhost:7025${product.imageUrl}`
+                    : `https://dukicks-backend-egbkdubnbxdmg4cw.italynorth-01.azurewebsites.net${product.imageUrl}`
                 }
                 alt={product.name}
                 className='product-main-image'
