@@ -179,9 +179,14 @@ const CheckoutPage = () => {
   if (cartLoading) {
     return (
       <Container className='my-5 text-center'>
-        <Spinner animation='border' role='status'>
-          <span className='visually-hidden'>Caricamento...</span>
-        </Spinner>
+        <div class='spinner-container'>
+          <div class='newtons-cradle'>
+            <div class='newtons-cradle__dot'></div>
+            <div class='newtons-cradle__dot'></div>
+            <div class='newtons-cradle__dot'></div>
+            <div class='newtons-cradle__dot'></div>
+          </div>
+        </div>
       </Container>
     );
   }
@@ -362,11 +367,14 @@ const CheckoutPage = () => {
                     >
                       {isProcessingPayment ? (
                         <>
-                          <Spinner
-                            animation='border'
-                            size='sm'
-                            className='me-2'
-                          />
+                          <div class='spinner-container'>
+                            <div class='newtons-cradle'>
+                              <div class='newtons-cradle__dot'></div>
+                              <div class='newtons-cradle__dot'></div>
+                              <div class='newtons-cradle__dot'></div>
+                              <div class='newtons-cradle__dot'></div>
+                            </div>
+                          </div>
                           Elaborazione...
                         </>
                       ) : (

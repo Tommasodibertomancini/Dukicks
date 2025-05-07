@@ -1,13 +1,5 @@
 import React, { useEffect } from 'react';
-import {
-  Container,
-  Row,
-  Col,
-  Card,
-  Button,
-  Alert,
-  Spinner,
-} from 'react-bootstrap';
+import { Container, Row, Col, Card, Button, Alert } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { FaArrowLeft, FaTrash } from 'react-icons/fa';
@@ -24,7 +16,7 @@ const CartPage = () => {
     (state) => state.cart
   );
   const { isAuthenticated } = useSelector((state) => state.auth);
-  const { removeItem, emptyCart } = useCart(); 
+  const { removeItem, emptyCart } = useCart();
 
   useEffect(() => {
     if (isAuthenticated) {
@@ -38,11 +30,11 @@ const CartPage = () => {
   };
 
   const handleRemoveItem = (cartItemId) => {
-    removeItem(cartItemId); 
+    removeItem(cartItemId);
   };
 
   const handleEmptyCart = () => {
-    emptyCart(); 
+    emptyCart();
   };
 
   const handleCheckout = () => {
@@ -67,9 +59,14 @@ const CartPage = () => {
   if (isLoading) {
     return (
       <Container className='my-5 text-center cart-container'>
-        <Spinner animation='border' role='status'>
-          <span className='visually-hidden'>Caricamento...</span>
-        </Spinner>
+        <div class='spinner-container'>
+          <div class='newtons-cradle'>
+            <div class='newtons-cradle__dot'></div>
+            <div class='newtons-cradle__dot'></div>
+            <div class='newtons-cradle__dot'></div>
+            <div class='newtons-cradle__dot'></div>
+          </div>
+        </div>
       </Container>
     );
   }

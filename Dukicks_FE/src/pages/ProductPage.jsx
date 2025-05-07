@@ -3,7 +3,6 @@ import {
   Container,
   Row,
   Col,
-  Spinner,
   Alert,
   Pagination,
 } from 'react-bootstrap';
@@ -241,8 +240,8 @@ const ProductPage = () => {
             </div>
 
             {isLoading ? (
-              <div className='text-center my-5'>
-                <div class='newtons-cradle text-center'>
+              <div class='spinner-container'>
+                <div class='newtons-cradle'>
                   <div class='newtons-cradle__dot'></div>
                   <div class='newtons-cradle__dot'></div>
                   <div class='newtons-cradle__dot'></div>
