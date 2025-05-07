@@ -5,3 +5,6 @@ Dukicks_BE/Dukicks_BE/obj/
 **/*.user
 **/*.userosscache
 **/*.sln.docstates
+# Editor files
+**/*.vsidx
+.vs/
