@@ -1,6 +1,7 @@
-# .gitignore
 # Dukicks_BE .NET
-/Dukicks_BE/bin/
-/Dukicks_BE/obj/
-/Dukicks_BE/*.user
-/Dukicks_BE/*.suo
+Dukicks_BE/Dukicks_BE/bin/
+Dukicks_BE/Dukicks_BE/obj/
+**/*.suo
+**/*.user
+**/*.userosscache
+**/*.sln.docstates
