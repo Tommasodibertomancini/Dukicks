@@ -23,7 +23,7 @@ namespace Dukicks_BE.Controllers
             _configuration = configuration;
 
             // Configura Stripe con la chiave segreta
-            StripeConfiguration.ApiKey = _configuration["Stripe:SecretKey"];
+            StripeConfiguration.ApiKey = Environment.GetEnvironmentVariable("STRIPE_SECRET_KEY");
         }
 
         [HttpPost("create-intent")]
