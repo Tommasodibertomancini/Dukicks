@@ -180,7 +180,7 @@ const DashboardPage = () => {
           <Row>
             <Col lg={12}>
               <Card className='border-0 shadow-sm'>
-                <Card.Header className='bg-white'>
+                <Card.Header>
                   <div className='d-flex justify-content-between align-items-center'>
                     <h5 className='mb-0'>Ordini recenti</h5>
                     <Button

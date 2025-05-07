@@ -1022,7 +1022,9 @@ table thead th {
   border-color: var(--table-border-color) !important;
 }
 
-table tbody td {
+table tbody td,
+.sizeguide {
+  background-color: var(--table-header-bg) !important;
   color: var(--table-cell-text) !important;
   border-color: var(--table-border-color) !important;
 }
@@ -1267,4 +1269,12 @@ html.dark-theme body .card {
     transparent 50%
   );
   z-index: 0;
+}
+
+.dark-theme {
+  --bs-form-placeholder-color: rgb(255, 255, 255) !important;
+}
+
+.dark-theme .breadcrumb-item.active {
+  color: #e0e0e0 !important;
 }

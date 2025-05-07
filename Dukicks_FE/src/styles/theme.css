@@ -20,6 +20,7 @@
   --footer-text: #ffffff;
   --muted-text: #6c757d;
   --transition-speed: 0.3s;
+  --bs-body-bg: #ffffff
 
   /* Variabili per wishlist */
   --wishlist-header-bg: #ffffff;
@@ -217,6 +218,7 @@
   --footer-bg: #1e1e1e;
   --footer-text: #e0e0e0;
   --muted-text: #9e9e9e;
+  --bs-body-bg: #121212;
 
   /* Variabili per wishlist */
   --wishlist-header-bg: #1e1e1e;

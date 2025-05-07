@@ -237,7 +237,7 @@ const CheckoutPage = () => {
         <Col lg={8}>
           {step === 1 && (
             <Card className='mb-4 fade-in'>
-              <Card.Header className='bg-white'>
+              <Card.Header>
                 <h5 className='mb-0'>Informazioni di spedizione</h5>
               </Card.Header>
               <Card.Body>
@@ -317,7 +317,7 @@ const CheckoutPage = () => {
                     </Form.Control.Feedback>
                   </Form.Group>
 
-                  <Card.Header className='bg-white px-0'>
+                  <Card.Header className='px-0'>
                     <h5 className='mb-0'>Metodo di pagamento</h5>
                   </Card.Header>
 
@@ -426,7 +426,7 @@ const CheckoutPage = () => {
         <Col lg={4}>
           {/* Riepilogo prodotti */}
           <Card>
-            <Card.Header className='bg-white'>
+            <Card.Header>
               <h5 className='mb-0'>Riepilogo prodotti</h5>
             </Card.Header>
             <Card.Body>

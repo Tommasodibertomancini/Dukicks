@@ -16,6 +16,7 @@ import ProductFeatures from '../components/products/ProductFeatures';
 import RatingStars from '../components/reviews/RatingStars';
 import ReviewList from '../components/reviews/ReviewList';
 import '../styles/productImage.css';
+import SizeGuide from '../components/products/SizeGuide';
 
 const ProductDetailPage = () => {
   const { id } = useParams();
@@ -160,25 +161,30 @@ const ProductDetailPage = () => {
             </div>
 
             {/* Selettore taglie */}
-            <SizeSelector
-              sizes={product.availableSizes
-                .map((size) =>
-                  typeof size === 'string' ? parseInt(size, 10) || size : size
-                )
-                .sort((a, b) => {
-                  const numA = Number(a);
-                  const numB = Number(b);
+            <div className='d-flex flex-column mb-4'>
+              <SizeSelector
+                sizes={product.availableSizes
+                  .map((size) =>
+                    typeof size === 'string' ? parseInt(size, 10) || size : size
+                  )
+                  .sort((a, b) => {
+                    const numA = Number(a);
+                    const numB = Number(b);
 
-                  if (!isNaN(numA) && !isNaN(numB)) {
-                    return numA - numB;
-                  }
+                    if (!isNaN(numA) && !isNaN(numB)) {
+                      return numA - numB;
+                    }
 
-                  return String(a).localeCompare(String(b));
-                })}
-              selectedSize={selectedSize}
-              onChange={setSelectedSize}
-              className='mb-4'
-            />
+                    return String(a).localeCompare(String(b));
+                  })}
+                selectedSize={selectedSize}
+                onChange={setSelectedSize}
+              />
+              <div className='d-flex justify-content-between align-items-center mt-1 mb-2'>
+                <h6 className='mb-0 fw-bold'>Seleziona la taglia</h6>
+                <SizeGuide />
+              </div>
+            </div>
 
             {/* Pulsante aggiungi al carrello */}
             <AddToCartButton
