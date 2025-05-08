@@ -8,6 +8,7 @@ const Hero = () => {
   const [featuredProducts, setFeaturedProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [key, setKey] = useState(0); 
 
   useEffect(() => {
     const fetchFeaturedProducts = async () => {
@@ -28,6 +29,7 @@ const Hero = () => {
 
   const handleSelect = (selectedIndex) => {
     setCurrentIndex(selectedIndex);
+    setKey((prevKey) => prevKey + 1);
   };
 
   if (loading) {
@@ -42,11 +44,11 @@ const Hero = () => {
           onSelect={handleSelect}
           indicators={true}
           controls={true}
-          interval={3000}
+          interval={5000} // Aumentato a 5 secondi per dare più tempo di lettura
           className='large-image-carousel'
         >
           {/* Prima slide */}
-          <Carousel.Item>
+          <Carousel.Item key={`welcome-${key}`}>
             <div className='carousel-welcome-container rounded-2'>
               <Container>
                 <Row className='align-items-center carousel-content'>
@@ -61,7 +63,7 @@ const Hero = () => {
                       to='/products'
                       variant='dark'
                       size='lg'
-                      className='rounded-0 welcome-button rounded-3'
+                      className='rounded-3 welcome-button'
                     >
                       Esplora Ora
                     </Button>
@@ -80,7 +82,7 @@ const Hero = () => {
 
           {/* Slide dei prodotti */}
           {featuredProducts.map((product, idx) => (
-            <Carousel.Item key={idx}>
+            <Carousel.Item key={`product-${idx}-${key}`}>
               <div className='carousel-product-large-container rounded-2'>
                 <Container>
                   <Row className='align-items-center carousel-content'>

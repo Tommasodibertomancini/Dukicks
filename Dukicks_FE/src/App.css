@@ -374,133 +374,6 @@ footer {
   background-color: white !important;
 }
 
-/*  Hero Component Styles  */
-.hero-section {
-  margin-bottom: 3rem;
-}
-
-/* Stile del carosello principale */
-.large-image-carousel {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border-radius: 0.5rem;
-  overflow: hidden;
-}
-
-/* Slide di benvenuto */
-.carousel-welcome-container {
-  background-color: var(--hero-welcome-bg);
-  color: var(--hero-welcome-text);
-  min-height: 500px;
-  display: flex;
-  align-items: center;
-  transition: background-color var(--transition-speed),
-    color var(--transition-speed);
-}
-
-.welcome-title {
-  font-size: 3.5rem;
-  font-weight: 800;
-  color: var(--hero-welcome-text);
-  margin-bottom: 1.5rem;
-  line-height: 1.1;
-}
-
-.welcome-description {
-  font-size: 1.3rem;
-  line-height: 1.6;
-  color: var(--hero-welcome-text);
-  margin-bottom: 2rem;
-}
-
-.welcome-button {
-  background-color: var(--hero-button-bg) !important;
-  color: var(--hero-button-text) !important;
-  font-weight: 600;
-  padding: 0.75rem 2rem;
-  transition: all 0.3s ease;
-}
-
-.welcome-button:hover {
-  background-color: var(--hero-button-hover-bg) !important;
-  transform: translateY(-3px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.welcome-logo-image {
-  max-width: 100%;
-  max-height: 400px;
-  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
-}
-
-/* Slide dei prodotti */
-.carousel-product-large-container {
-  background-color: var(--hero-product-bg);
-  color: var(--hero-product-text);
-  min-height: 500px;
-  display: flex;
-  align-items: center;
-  transition: background-color var(--transition-speed),
-    color var(--transition-speed);
-}
-
-.product-title-large {
-  font-size: 3.2rem;
-  font-weight: 800;
-  color: var(--hero-product-text);
-  margin-bottom: 1.5rem;
-  line-height: 1.1;
-}
-
-.action-button-large {
-  background-color: var(--hero-button-bg) !important;
-  color: var(--hero-button-text) !important;
-  font-weight: 600;
-  padding: 0.75rem 2rem;
-  transition: all 0.3s ease;
-}
-
-.action-button-large:hover {
-  background-color: var(--hero-button-hover-bg) !important;
-  transform: translateY(-3px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.product-image-large-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.product-feature-image-large {
-  max-width: 100%;
-  max-height: 400px;
-  object-fit: contain;
-  transition: transform 0.5s ease;
-  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
-}
-
-/* Indicatori del carosello */
-.large-image-carousel .carousel-indicators button {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin: 0 5px;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-.large-image-carousel .carousel-indicators button.active {
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.dark-theme .large-image-carousel .carousel-indicators button {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.dark-theme .large-image-carousel .carousel-indicators button.active {
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
 /*  Category Showcase Styles  */
 .category-section h2 {
   color: var(--text-color);
@@ -1277,4 +1150,61 @@ html.dark-theme body .card {
 
 .dark-theme .breadcrumb-item.active {
   color: #e0e0e0 !important;
+}
+
+/* Footer Style */
+
+footer.bg-dark {
+  background: var(
+    --footer-gradient,
+    linear-gradient(90deg, #2c3e50, #4a6572)
+  ) !important;
+  color: white;
+  padding: 2rem 0;
+  margin-top: 3rem;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer h5 {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+footer .text-muted {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+footer .social-icons a {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+}
+
+footer .border-top {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  margin-top: 2rem;
+  padding-top: 2rem;
 }
