@@ -22,7 +22,7 @@
 - 👤 Autenticazione utente con login e registrazione
 - ❤️ Wishlist (preferiti)
 - 🌗 Tema chiaro/scuro
-- 📱 Responsive mobile-first
+- 📱 Responsive
 - 🎨 Animazioni fluide con CSS personalizzato
 - 🔐 Accesso admin per gestione prodotti
 
