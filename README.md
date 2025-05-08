@@ -18,13 +18,14 @@
 - 🔍 Ricerca e filtri per nome, categoria, brand e prezzo
 - 👟 Pagina dettagliata del prodotto con selezione taglie e recensioni
 - 🛒 Carrello dinamico con modifica quantità
-- 💳 Checkout intuitivo
+- 💳 Checkout intuitivo con integrazione Stripe
 - 👤 Autenticazione utente con login e registrazione
 - ❤️ Wishlist (preferiti)
 - 🌗 Tema chiaro/scuro
 - 📱 Responsive
 - 🎨 Animazioni fluide con CSS personalizzato
 - 🔐 Accesso admin per gestione prodotti
+- 📊 Dashboard personale per visualizzare ordini, preferenze e dati
 
 ---
 
@@ -91,6 +92,7 @@ src/
 - Node.js 14+
 - .NET SDK
 - SQL Server
+- Account Stripe con chiavi API
 
 ### Clonazione e setup
 
