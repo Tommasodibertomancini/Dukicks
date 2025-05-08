@@ -1,9 +1,10 @@
 <p align="center">
-<img src="Dukicks_FE/public/assets/img/DuKicks.png" width="150" alt="DuKicks Logo">
+<img src="Dukicks_FE/public/assets/img/DuKicks.png" width="100" alt="DuKicks Logo">
 </p>
----
 
+<p align="center">
 # DuKicks
+</p>
 
 ---
 
