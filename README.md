@@ -24,7 +24,7 @@
 - 🌗 Tema chiaro/scuro
 - 📱 Responsive
 - 🎨 Animazioni fluide con CSS personalizzato
-- 🔐 Accesso admin per gestione prodotti
+- 🔐 Accesso admin per gestione prodotti, ordini e utenti
 - 📊 Dashboard personale per visualizzare ordini, preferenze e dati
 
 ---
