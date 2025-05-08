@@ -2,9 +2,7 @@
 <img src="Dukicks_FE/public/assets/img/DuKicks.png" width="100" alt="DuKicks Logo">
 </p>
 
-<p align="center">
-# DuKicks
-</p>
+<h1 align="center">DuKicks</h1>
 
 ---
 
@@ -59,6 +57,7 @@ Dukicks/
 ```
 
 - **Frontend**:
+
   - Componenti modulari React
   - Stato gestito via Redux
   - Routing dichiarativo
@@ -88,6 +87,7 @@ src/
 ## 🚀 Come installare
 
 ### Prerequisiti
+
 - Node.js 14+
 - .NET SDK
 - SQL Server
@@ -114,6 +114,7 @@ cd ../Dukicks_FE
 npm install
 npm start
 ```
+
 ---
 
 ## 🔨 Build
@@ -127,4 +128,4 @@ npm run build
 
 ## 👥 Autori
 
-- **Tommaso Di Berto Mancini** – *Full Stack Developer* – [GitHub](https://github.com/Tommasodibertomancini)
+- **Tommaso Di Berto Mancini** – _Full Stack Developer_ – [GitHub](https://github.com/Tommasodibertomancini)
