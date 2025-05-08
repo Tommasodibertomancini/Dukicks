@@ -53,6 +53,7 @@
   /* Variabili per Navbar e Footer */
   --navbar-gradient: linear-gradient(90deg, #2c3e50, #4a6572);
   --footer-gradient: linear-gradient(90deg, #37474f, #546e7a);
+  --product-image-gradient: linear-gradient(135deg, #f8fafa, #e9efec);
 
   /* Variabili per il carrello vuoto */
   --empty-cart-bg: #ffffff;
@@ -395,6 +396,7 @@
   /* Variabili per Navbar e Footer */
   --navbar-gradient: linear-gradient(90deg, #1e272e, #2f3542);
   --footer-gradient: linear-gradient(90deg, #1e272e, #2f3542);
+  --product-image-gradient: linear-gradient(135deg, #2c3e50, #4a6572);
 
   /* Variabili per il dropdown menu*/
   --dropdown-menu-bg: #1e1e1e;

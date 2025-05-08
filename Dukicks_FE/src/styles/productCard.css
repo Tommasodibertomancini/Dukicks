@@ -199,11 +199,11 @@ html:not(.dark-theme) .title {
 }
 
 html:not(.dark-theme) .brand-info {
-  color: #555555 !important; /* Brand info scuro */
+  color: #555555 !important; 
 }
 
 html:not(.dark-theme) .price {
-  color: #000000 !important; /* Prezzo nero */
+  color: #000000 !important; 
 }
 
 html:not(.dark-theme) .original-price {
