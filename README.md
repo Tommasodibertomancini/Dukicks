@@ -1,5 +1,6 @@
-<img src="Dukicks_FE/public/assets/img/DuKicks.png" width="200" alt="DuKicks Logo">
-
+<p align="center">
+<img src="Dukicks_FE/public/assets/img/DuKicks.png" width="150" alt="DuKicks Logo">
+</p>
 ---
 
 # DuKicks
