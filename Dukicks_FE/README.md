@@ -1,8 +1,12 @@
-# DuKicks – E-commerce di Sneakers
+![DuKicks Logo](Dukicks_FE/public/assets/img/DuKicks.png)
 
-<img src="Dukicks_FE/public/assets/img/DuKicks.png" width="200" alt="DuKicks Logo">
+---
 
-**DuKicks** è un'applicazione e-commerce moderna e responsive pensata per gli amanti delle sneakers. Offre un'esperienza utente fluida e funzionale, con un'interfaccia intuitiva, un potente sistema di filtraggio e gestione del carrello, oltre a un backend solido e sicuro.
+# DuKicks
+
+---
+
+**DuKicks** è un'applicazione e-commerce full-stack, moderna e responsive pensata per gli amanti delle sneakers. Offre un'esperienza utente fluida e funzionale, con un'interfaccia intuitiva, un potente sistema di filtraggio e gestione del carrello, oltre a un backend solido e sicuro.
 
 🔗 **Live demo**: [dukicks.vercel.app](https://dukicks.vercel.app)
 
