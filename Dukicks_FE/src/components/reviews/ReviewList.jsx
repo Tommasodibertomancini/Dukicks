@@ -4,6 +4,7 @@ import { FaUser } from 'react-icons/fa';
 import { reviewService } from '../../services';
 import RatingStars from './RatingStars';
 import ReviewForm from './ReviewForm';
+import { useSelector } from 'react-redux'; // Aggiungi questa importazione
 
 const ReviewsList = ({ productId }) => {
   const [reviews, setReviews] = useState([]);
@@ -11,23 +12,31 @@ const ReviewsList = ({ productId }) => {
   const [error, setError] = useState(null);
   const [canReview, setCanReview] = useState(false);
   const [showReviewForm, setShowReviewForm] = useState(false);
+  const { isAuthenticated } = useSelector((state) => state.auth); // Aggiungi questo
 
   useEffect(() => {
     const fetchReviews = async () => {
       try {
         setLoading(true);
         const response = await reviewService.getProductReviews(productId);
-        setReviews(response); 
-        try {
-          const canReviewResponse = await reviewService.canReviewProduct(
-            productId
-          );
-          setCanReview(canReviewResponse.canReview); 
-        } catch (error) {
-          console.error(
-            'Errore nel controllo della possibilità di recensire:',
-            error
-          );
+        setReviews(response);
+
+        // Verifica se l'utente è autenticato prima di chiamare canReviewProduct
+        if (isAuthenticated) {
+          try {
+            const canReviewResponse = await reviewService.canReviewProduct(
+              productId
+            );
+            setCanReview(canReviewResponse.canReview);
+          } catch (error) {
+            console.error(
+              'Errore nel controllo della possibilità di recensire:',
+              error
+            );
+            setCanReview(false);
+          }
+        } else {
+          // Se l'utente non è autenticato, non può recensire
           setCanReview(false);
         }
       } catch (error) {
@@ -39,7 +48,7 @@ const ReviewsList = ({ productId }) => {
     };
 
     fetchReviews();
-  }, [productId]);
+  }, [productId, isAuthenticated]); // Aggiungi isAuthenticated come dipendenza
 
   const handleReviewSubmitted = (newReview) => {
     setReviews([newReview, ...reviews]);
