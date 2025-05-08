@@ -66,7 +66,7 @@ const Hero = () => {
                       Esplora Ora
                     </Button>
                   </Col>
-                  <Col md={4} className='d-none d-md-block'>
+                  <Col md={4} className='d-none d-sm-block'>
                     <img
                       src='https://dukicks.vercel.app/assets/img/DuKicks.png'
                       alt='DuKicks Logo'
